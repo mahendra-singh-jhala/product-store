@@ -17,7 +17,7 @@ const CartList = ({ cart, removeFromCart, updateQuantity }) => {
             <div>
                 <div className="flex justify-between items-center border-b-2 border-gray-300  mx-5">
                     <h1 className="text-4xl font-bold text-orange-400 uppercase text-center p-5">Cart Items</h1>
-                    <h3 className="text-red-600 text-xl font-bold uppercase text-end p-5">Total Price : <span className="text-xl font-bold text-green-600">$ {discountPrice.toFixed(2)} </span> </h3>
+                    <h3 className="text-red-600 text-xl font-bold uppercase text-end p-5"> <span className="text-gray-400">( 10% discount )</span> Total Price : <span className="text-xl font-bold text-green-600">$ {discountPrice.toFixed(2)} </span> </h3>
                 </div>
                 {cart.length === 0 ? (
                     <p className="text-2xl text-red-400 font-bold uppercase mx-5 text-center p-5">No item in the cart</p>
